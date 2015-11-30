@@ -1,13 +1,14 @@
 #include "FastLED.h"
 
-// How many leds in your strip?
+/*
+ * Heartbeat simulator, designed for use with an arduino pulse
+ * meter. Idea is to have around 4 strips that all start at
+ * the center of the chest and head out to each extremity.
+ * 
+ */
+ 
 #define NUM_LEDS 64
-
-// For led chips like Neopixels, which have a data line, ground, and power, you just
-// need to define DATA_PIN.  For led chipsets that are SPI based (four wires - data, clock,
-// ground, and power), like the LPD8806 define both DATA_PIN and CLOCK_PIN
 #define DATA_PIN 3
-#define CLOCK_PIN 13
 
 const uint8_t PROGMEM gamma[] = {
     0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
